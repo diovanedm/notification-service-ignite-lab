@@ -1,0 +1,7 @@
+{
+    "material-icon-theme.files.associations": {
+          "*.controller.ts": "nest-controller",
+          "*.module.ts": "nest-module",
+          "*.service.ts": "nest-service",
+      }
+}
