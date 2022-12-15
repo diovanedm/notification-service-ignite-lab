@@ -8,7 +8,7 @@ export class PrismaNotificationsRepository implements NotificationsRepository {
   constructor(private prisma: PrismaService) {}
 
   async create(notification: Notification): Promise<void> {
-    this.prisma.notification.create({
+    await this.prisma.notification.create({
       data: {
         id: notification.id,
         category: notification.category,
