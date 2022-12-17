@@ -1,4 +1,5 @@
 import { SendNotification } from '@application/use-cases/send-notification';
+import { Controller, Injectable } from '@nestjs/common';
 import { EventPattern, Payload } from '@nestjs/microservices';
 
 interface SendNotificationPayload {
@@ -7,6 +8,7 @@ interface SendNotificationPayload {
   recipientId: string;
 }
 
+@Controller()
 export class NotificationsController {
   constructor(private sendNotification: SendNotification) {}
 
